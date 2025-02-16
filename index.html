@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to Styleluxe</h1>
+      </header>
+
+      <form id="sign-up-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            pattern="[\w.\-]+@([\w\-]+\.)+[\w\-]{2,}"
+            placeholder="Enter valid email address"
+            required
+          />
+          <span class="error-message">Please enter a valid email address</span>
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number</label>
+          <input
+            id="mobile-number"
+            name="mobile-number"
+            type="tel"
+            pattern="[6-9]\d{9}"
+            placeholder="Enter 10 digit mobile number"
+            required
+          />
+          <span class="error-message">Please enter a valid mobile number</span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+            placeholder="Enter new password"
+            required
+          />
+          <span class="error-message">Please enter a valid password</span>
+        </div>
+        <ul class="validation-messages" style="display: none;">
+          <li>Password must be at least 8 characters long</li>
+          <li>Password must contain at least one number</li>
+          <li>Password must include at least one uppercase letter</li>
+          <li>Password must include at least one lowercase letter</li>
+          <li>
+            Password must contain at least one special character (e.g.,
+            !@#$%^&*)
+          </li>
+          <li>Password must not contain spaces</li>
+        </ul>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
