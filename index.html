@@ -52,15 +52,15 @@
           <span class="error-message">Please enter a valid password</span>
         </div>
         <ul class="validation-messages">
-          <li data-eight-chars=".{8,}">Password must be at least 8 characters long</li>
-          <li data-one-number="\d">Password must contain at least one number</li>
-          <li data-upper-letter="[A-Z]">Password must include at least one uppercase letter</li>
-          <li data-lower-letter="[a-z]">Password must include at least one lowercase letter</li>
-          <li data-special-char="[@$!%*?&^]">
+          <li pattern=".{8,}">Password must be at least 8 characters long</li>
+          <li pattern="\d">Password must contain at least one number</li>
+          <li pattern="[A-Z]">Password must include at least one uppercase letter</li>
+          <li pattern="[a-z]">Password must include at least one lowercase letter</li>
+          <li pattern="[@$!%*?&^]">
             Password must contain at least one special character (e.g.,
             !@#$%^&*)
           </li>
-          <li data-white-space="^\S{8,}$">Password must not contain spaces</li>
+          <li pattern="^\S{8,}$">Password must not contain spaces</li>
         </ul>
         <button type="submit">Sign Up</button>
       </form>
