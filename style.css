@@ -53,7 +53,7 @@ li.match::before {
   color: #02a72b;
 }
 
-#sign-up-form {
+#signUpForm {
   padding: 1.5rem;
   border-radius: 8px;
 }

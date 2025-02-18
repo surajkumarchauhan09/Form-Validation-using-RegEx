@@ -6,3 +6,11 @@ password.addEventListener('input', (event) => {
         (regex.test(inputValue)) ? listElement.classList.add("match") : listElement.classList.remove("match");
     });
 });
+
+signUpForm.addEventListener('submit', (event) => {
+    event.preventDefault();  // Prevent the default form submission
+});
+
+// mobileNumber.addEventListener('keypress', (event) => {
+//     if(/\D/.test(event.key)) event.preventDefault();  // Prevent non-digit characters
+// });

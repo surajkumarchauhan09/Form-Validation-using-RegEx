@@ -14,7 +14,7 @@
         <h1>Welcome to Styleluxe</h1>
       </header>
 
-      <form id="sign-up-form">
+      <form id="signUpForm" novalidate>
         <div class="form-group">
           <label for="email">Email Address</label>
           <input
@@ -30,11 +30,12 @@
         <div class="form-group">
           <label for="mobile-number">Mobile Number</label>
           <input
-            id="mobile-number"
+            id="mobileNumber"
             name="mobile-number"
             type="tel"
             pattern="[6-9]\d{9}"
             placeholder="Enter 10 digit mobile number"
+            onkeypress="return /\d/.test(event.key)"
             required
           />
           <span class="error-message">Please enter a valid mobile number</span>
